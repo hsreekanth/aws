@@ -20,7 +20,7 @@ pipeline {
             sh " /usr/local/bin/aws configure set aws_secret_access_key ${SECRET_KEY}"
         }
          sh '/usr/local/bin/aws configure set region ap-south-1'
-         sh '/usr/local/bin/aws elasticbeanstalk update-environment --application-name sample-app --environment-name sampleapp-env --version-label snapshot1.0
+         sh '/usr/local/bin/aws elasticbeanstalk update-environment --application-name tomcat --environment-name tomcat-env --version-label sampleapplication'
             }
         }
 		
